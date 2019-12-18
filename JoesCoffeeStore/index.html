@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title></title>
+        <title>Welcome to Joe`s coffee store</title>
+        <link href="Layout.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
@@ -10,8 +11,15 @@
                 <img src="coffee1.jpg"/>
             </a>
             <span id="headername">Joe`s coffee store</span>
+            <input type="search" class="searchbox" placeholder="Search our store"/>
         </div>
         </header>
+        <div id="welcomeimage">
+            <img src="welcome.jpg"/>
+        </div>
+        <div id="coffeeofthemonth">
+            <img src="coffeeofthemonth.jpg"/>
+        </div>
         <section id="welcometext">
             <header>Welcome to Joe`s coffee store</header>
             <span>
@@ -44,7 +52,7 @@
                         Add to cart
                     </div>
                 </article>
-                <article class="productarticle">
+                <article class="productarticle" id="myAddToCartButton">
                     <figure>
                         <img class="productarticlethumbnail" src="coffee2.jpg"/>
                     </figure>
@@ -93,5 +101,6 @@
             <p class="textcontent">All site content iz copiring<a class="mainlink" href=""></a></p>
             <p class="smalltext">This page was generated on <time>09:25:04.123</time></p>
         </footer>
+        <script src="myscript.js"></script>
     </body>
 </html>
