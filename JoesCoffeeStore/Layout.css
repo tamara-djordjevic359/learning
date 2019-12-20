@@ -25,12 +25,56 @@ header{
     width: 200px;
 }
 #headername {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     color: #603813;
     padding: 15px;
     margin: 8px 0px;
     font-weight: bold;
+    text-shadow: 5px 5px 5px #5f2c17;
 }
+nav{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+    nav ul{
+        list-style: none;
+        padding: 0px;
+    }
+        nav ul li{
+            display: block;
+        }
+.backgroundgradient{
+    background: linear-gradient(to right, #603813, #341c05);
+}
+.navlik{
+    height: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    float: left;
+}
+    .navlik.active{
+    }
+.addtocartbutton{
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;
+}
+    .addtocartbutton:hover, .addtocartbutton:focus{
+        background-color: #512c0a;
+        box-shadow: 0 0 1px rgba(0,0,0, .75));
+    }
+
 #welcomeimage{
     float: left;
     width: 700px;
@@ -45,6 +89,7 @@ header{
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
+    column-count: 2;
 }
     #welcometext > header{
         color: #603813;
@@ -78,14 +123,22 @@ header{
     margin-bottom: 20px;
 }
 
-
-
+.productarticle{
+    column-width: 200px;
+    column-gap: 3px;
+}
+.productarticlemoreinfo{
+    font-size: 12px;
+    color: #603813;
+    margin-top: 5px;
+}
 footer{
     clear: both;
     width: 100%;
     background-color: #5c5045;
     margin: 20px 0px 20px;
     padding: 5px;
+    transform: rotate(10deg);
 }
 .smalltext{
     font-size: 10px;
