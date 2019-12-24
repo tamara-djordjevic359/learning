@@ -3,6 +3,7 @@
 <head>
     <title>Welcome to Joe`s coffee store</title>
     <link href="Layout.css" rel="stylesheet"/>
+    <script src="dragAndDrop.js"></script>
 </head>
     <body>
         <header>
@@ -15,13 +16,13 @@
             </div>
             <nav class="backgroundgradient">
                 <ul>
-                    <li><a class="navlik" href="index.html">Home</a></li>
-                    <li><a class="navlik" href="blog.html">Blog</a></li>
-                    <li><a class="navlik" href="allcoffees.html">Our Coffees</a></li>
-                    <li><a class="navlik" href="accessories.html">Accessories</a></li>
-                    <li><a class="navlik" href="Gifts.html">Gifts</a></li>
-                    <li><a class="navlik" href="findus.html">Find us</a></li>
-                    <li><a class="navlik" href="checkout.html">Checkout</a></li>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="blog.html">Blog</a></li>
+                    <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+                    <li><a class="navlink" href="accessories.html">Accessories</a></li>
+                    <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+                    <li><a class="navlink" href="findus.html">Find us</a></li>
+                    <li><a class="navlink" href="checkout.html">Checkout</a></li>
                 </ul>
             </nav>
         </header>
@@ -94,5 +95,14 @@
                 </div>
             </article>
         </section>
+        <div id="shoppingcart">
+            <header class="blockheader">
+                <span>Shopping cart</span>
+            </header>
+            <ul></ul>
+        </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", addDnDHandlers, false);
+        </script>
     </body>
 </html>

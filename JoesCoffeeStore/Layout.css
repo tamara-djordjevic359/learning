@@ -50,14 +50,12 @@ nav{
 .backgroundgradient{
     background: linear-gradient(to right, #603813, #341c05);
 }
-.navlik{
+.navlink{
     height: 35px;
     margin-right: 10px;
     font-size: 18px;
     float: left;
 }
-    .navlik.active{
-    }
 .addtocartbutton{
     cursor: pointer;
     padding: 4px 25px;
@@ -72,16 +70,24 @@ nav{
 }
     .addtocartbutton:hover, .addtocartbutton:focus{
         background-color: #512c0a;
-        box-shadow: 0 0 1px rgba(0,0,0, .75));
+        box-shadow: 0 0 1px rgba(0,0,0, .75);
     }
 
 #welcomeimage{
+    margin-top: 10px;
     float: left;
-    width: 700px;
+    width: 70%;
+}
+#welcomeimage img{
+    width: 80%;
 }
 #coffeeofthemonth{
     float: right;
-    width: 300px;
+    width: 30%;
+    margin-top: 15px;
+}
+#coffeeofthemonth img{
+    width: 100%;
 }
 #welcometext{
     float: left;
@@ -126,6 +132,7 @@ nav{
 .productarticle{
     column-width: 200px;
     column-gap: 3px;
+    column-count: 2;
 }
 .productarticlemoreinfo{
     font-size: 12px;
