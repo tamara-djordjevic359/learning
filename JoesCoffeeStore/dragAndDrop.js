@@ -5,10 +5,16 @@ function addDnDHandlers(){
     var shoppingCartDropzone = document.getElementById("shoppingcart");
     var shoppingcart = document.querySelectorAll("#shoppingcart ul")[0];
 
+    if (typeof Thingy === 'function'){
+        // It's a function, so it definitely can't be an instance.
+      } else {
+        // It could be anything other than a constructor
+      }
+      
     var Cart = (function () {
         this.coffees = new Array();
     });
-
+    
     var Coffee = (function (id, price) {
         this.coffeeId = id;
         this.price = price;
