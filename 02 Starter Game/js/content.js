@@ -2,7 +2,7 @@ var questions = {
 	question1: {
 		questionLabel: "Question 1 Text",
 		questionText: "What is the correct answer?",
-		questionImage: 'images/pic2.png',
+		questionImage: 'images/forest.jpg',
 		optionA: {
 			responseText: "Option A",
 			correctResponse: true,

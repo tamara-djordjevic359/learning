@@ -30,15 +30,15 @@
 		
 		<!-- Game Board -->
 		<div class="d-flex flex-row justify-content-around flex-wrap">
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#questionModal">100</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">100</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">100</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">200</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">200</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">200</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">500</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">500</div>
-			<div class="gamePiece m-2 d-flex justify-content-center align-items-center">500</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(1)">100</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(2)">100</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(3)">100</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(4)">200</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(5)">200</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(6)">200</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(7)">500</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(8)">500</div>
+			<div class="gamePiece m-2 d-flex justify-content-center align-items-center" onclick="showQuestion(9)">500</div>
 		</div>
 
 	</div>
@@ -70,10 +70,10 @@
 						</div>
 					</div>
 				<div class="d-flex flex-column py-3">
-					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionA">Option A</button>
-					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionB">Option B</button>
-					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionC">Option C</button>
-					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionD">Option D</button>
+					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionA" onclick="submitQuestion()">Option A</button>
+					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionB" onclick="submitQuestion()">Option B</button>
+					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionC" onclick="submitQuestion()">Option C</button>
+					<button type="button" class="btn btn-primary btn-lg mb-2" id="optionD" onclick="submitQuestion()">Option D</button>
 				</div>
 				</div>
 			</div>
